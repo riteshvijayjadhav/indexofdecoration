@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Why Bhalerao Decoration? Bhalerao Decoration is a team of people who has 30 years of experience, work together to give you the best service.">
+    <meta name="keyword" content="Wedding, Birthday, Surprise, Event">
+    <meta name="author" content="Ritesh Jadhav">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Event Decorator in Nashik | Bhalerao Decoration</title>
+
+    <!--Link to use google icons.-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <!--google Tangerine font link-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <style>
+        body{
+            margin: 0%;
+        }
+
+        .material-icons{
+        font-size: xx-large;
+    }
+        /*side bar laptop*/
+        #idsidebar_laptop{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0;
+            overflow: hidden;
+            background-color:black;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+           
+       }
+
+       .sidebar_link_laptop{
+           float: left;
+       }
+       .sidebar_link_laptop a {
+        
+        display: block;
+        color: rgb(218, 212, 212);
+        text-align: center;
+        padding: 15px 100px;
+        text-decoration: none;
+       }
+        
+       .sidebar_link_laptop a:hover{
+            font-size: large;
+            text-decoration: underline royalblue;
+            color:white;
+       }
+
+        /*side bar for mobile*/
+        #idsidebar {
+          list-style-type: none;
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          background-color:black;/*make it white*/
+          
+          position: fixed;
+          
+          height: 100%;
+          overflow: auto;
+          text-align: center;
+          display: none;/*make it none side bar*/
+        } 
+         
+        
+        .sidebar_link a {
+          display: block;
+          color: #000;
+          padding: 30px 10px;
+          text-decoration: none;
+          color: white;
+        }
+
+        .sidebar_link a.active {
+          background-color: rgb(12, 11, 11);
+          color: red;
+          font-size: x-large;
+        }
+        
+        .sidebar_link a:hover:not(.active) {
+          background-color: rgb(12, 11, 11);
+          color: white;
+          font-size: x-large;
+          text-decoration: underline solid royalblue;
+        }
+
+        .button_close{
+          border: none;
+          position: absolute;
+          top: 8px;
+          right: 16px;
+          font-size: 35px;
+          padding: 5px 14px;
+          background-color: #000;
+          color: white;
+         cursor: pointer;
+        }
+       .button_open{
+           
+           width: 5px;
+           padding-right: 15px;
+           border: none;
+           background-color: #000;
+          color: #f1f1f1;
+          font-size: x-large;
+          cursor: pointer;
+       }
+       .header_name{
+           text-align: center;
+          background-color: black;
+          color: red;
+          margin-top: -40px;
+          padding: 12px 16px;
+          font-size: x-large;
+       }
+
+
+       /*for header link*/
+       .header_name_link:link,.header_name_link:visited {
+         background-color: #000;
+         color: rgba(255, 0, 0, 0.966);
+         text-decoration: none;
+       }
+
+       .header_name_link:hover {
+         text-decoration: none;
+         color: red;
+       }
+
+      
+       /*For laptop display none*/
+       #idsidebar{
+           display: none;
+       }
+       .button_open{
+           display: none;
+       }
+       .button_close{
+           display: none;
+       }
+       
+       .header_name{
+           display: none;
+       }
+       
+       /*For slide show*/
+       .mySlides{
+          
+          width: 100%;
+          height: 600px;
+          display: none;
+      }
+
+      /*for reviews*/
+      
+       
+     
+        /* for footer*/
+        .footer{
+            text-align: center;
+            background-color:rgb(12, 12, 12);
+            padding: 1px;
+            
+        }
+
+        .logo{
+          width: 250px;
+          height: 250px;
+          
+        }
+        /*for footer logo*/
+        .fotter_1{
+
+          list-style-type: none;
+          margin-right: 44%;
+          
+        }
+        
+        .fotter_2{
+         float: right;
+         padding: 5px;
+         
+        }
+        
+        
+
+        .logo_media{
+          opacity: 0.8;
+          width: 35px;
+          height: 35px;
+          
+        }
+
+        .logo_media:hover{
+          opacity: 1;
+        }
+        
+       
+
+         /*for rj creation*/
+        .rjcreation{
+        font-family: "Tangerine", serif;
+        color: white;
+        text-shadow: 2px 2px 6px gold;
+        }
+        
+
+        /*for  footer buttons*/
+        .button_1{
+          width: 100%;
+          list-style-type: none;
+            margin: 0px;
+            padding: 0;
+            overflow: hidden;
+            background-color:black;
+            position: -webkit-sticky; /* Safari */
+            position: static;
+            bottom: 0;
+            
+            
+        }
+
+        
+        .button_2{
+            float: left;
+        }
+        .button_2 a{
+        display: block;
+        color: rgb(218, 212, 212);
+        text-align: center;
+        padding: 12px 200px;
+        
+        text-decoration: none;
+        
+            
+        }
+
+        /*for out work*/
+        div.gallery {
+          cursor: pointer;
+          border: 1px solid #ccc;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: 200px; /*make changes here for display size of images.*/
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .responsive {
+          padding: 0 6px;
+          float: left;
+          width: 24.99999%;
+        }
+          
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;}
+        
+          .why::first-letter{
+              font-size: x-large;
+              font-variant: small-caps;
+       }
+
+       .why{
+         text-align: center;
+       }
+      @media only screen and (max-width: 1200px) {
+        .sidebar_link_laptop a {
+        
+        padding: 15px 40px;
+        
+       }
+       
+        .button_2 a{
+          padding: 12px 125px;
+        }
+        .logo{
+          width: 200px;
+          height: 200px;
+          
+        }
+        .fotter_1{
+        margin-right: 42%;
+
+        }
+        /*for review*/
+        
+       
+        }
+
+       @media only screen and (max-width: 850px) {
+        .sidebar_link_laptop a {
+            
+            padding: 5px 14px;
+        
+       }
+       .sidebar_link_laptop a:hover{
+            font-size: large;
+       }
+
+       .mySlides{
+          
+          height: 300px;
+          
+      }
+
+      /*for my reviews*/
+      
+      
+       
+
+      /*for */
+        .button_2 a{
+          padding: 12px 70px;
+        }
+
+        div.responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+          }
+
+          .logo{
+          width: 150px;
+          height: 150px;
+          
+        }
+        .fotter_1{
+        margin-right: 35%;
+
+        }
+        }
+        
+       
+
+       @media only screen and (max-width: 500px) {
+           
+       
+       .button_open{
+           display: block;
+       }
+       .button_close{
+           display: block;
+       }
+       .header_name{
+           display: block;
+       }
+
+
+       #idsidebar_laptop{
+            display: none;  /* hide side bar for laptop*/
+        }
+    
+        .sidebar_link_laptop{
+            display: none;
+        }
+
+        .mySlides{
+          
+          height: 200px;
+          
+      }
+
+      .slide_show{
+          margin-top: -5%;
+      }
+      
+      /*For reviews*/
+      
+       
+      
+        
+        .button_2 a{
+          padding: 12px 18px;
+        }
+
+        .button_1{
+          position: fixed;
+        }
+
+        div.responsive {
+            width: 100%;
+      }
+
+     
+        .logo{
+         
+          width: 95px;
+          height: 95px;
+          
+        }
+
+        .rjcreation{
+           margin-bottom: 15%;
+        }
+
+
+        .fotter_1{
+
+        
+        margin-right: 30%;
+
+        }
+        
+        
+
+        .logo_media{
+          width: 30px;
+          height: 30px;
+        }
+        
+    }
+
+    
+
+       
+    </style>
+</head>
+<body>
+    <ul id="idsidebar" >
+        <button onclick="sidebar_close()" class="button_close"> &times</button>
+        <li  class="sidebar_link"><a href="wedding.html">WEDDING</a></li>
+        <li  class="sidebar_link"><a href="birthday.html">BIRTHDAY</a></li>
+        
+        <li  class="sidebar_link"><a href="event.html">EVENTS</a></li>
+        <li  class="sidebar_link"><a href="surprise.html">SURPRISE PLANNER</a></li>
+      </ul>
+
+
+      <ul id="idsidebar_laptop">
+        
+        <li class="sidebar_link_laptop"><a href="wedding.html">WEDDING</a></li>
+        <li  class="sidebar_link_laptop"><a href="birthday.html">BIRTHDAY</a></li>
+        <li  class="sidebar_link_laptop"><a style="color: red;font-size: x-large;" href="index.html">Bhalerao </a></li>
+        <li  class="sidebar_link_laptop"><a href="event.html">EVENTS</a></li>
+        <li  class="sidebar_link_laptop"><a href="surprise.html">SURPRISE PLANNER</a></li>
+
+      </ul>
+
+      <div id="page" >
+        <div class="header" >
+        
+             
+          <button class="button_open" onclick="sidebar_open()" ><i class="material-icons">menu</i></button>
+          <h1  class="header_name"><a class="header_name_link" href="index.html">BHALERAO</a></h1>
+        </div>
+        
+      </div>
+ 
+      <!-- for slideshow -->
+      <div class="slide_show">
+        <img class="mySlides" src="imagesi/slideshow_1.jpg" alt="decoration" >
+        <img class="mySlides" src="imagesi/slideshow_2.jpg" alt="decoration">
+        <img class="mySlides" src="imagesi/slideshow_3.jpg" alt="decoration">
+        <img class="mySlides" src="imagesi/slideshow_4.jpg" alt="decoration">
+
+      </div>
+      <script>
+        var myIndex = 0;
+       carousel();
+       
+       function carousel() {
+         var i;
+         var x = document.getElementsByClassName("mySlides");
+         for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+         }
+         myIndex++;
+         if (myIndex > x.length) {myIndex = 1}    
+         x[myIndex-1].style.display = "block";  
+         setTimeout(carousel, 2000); // Change image every 2 seconds
+       }
+     </script>
+             <h3 style="text-align: center;"> <i> <ins> WHY BHALERAO DECORATION?</ins> </i></h3>
+             <p class="why">Bhalerao Decoration is a team of people who has 30 years of experience,
+              that works together to give you the best service with<br> 
+              <b> Aim:</b>
+            <i>TO MAKE YOUR SPECIAL DAY, MEMORABLE!</i> <br>
+            Since 1990, We are gathering relationship-building experience, and we had organized many weddings and events for various couples and businesses.
+          The relationship is the key-value at wow and with this in mind, We focus on building a strong relationship with our clients.Bhalerao Decoration is a synonym for an excellent professional team that would work for you according to your events preferences and priorities.<br>
+          
+        </p>    
+
+       
+      <!-- for our work -->
+      <h3 style="text-align: center;"> <i> <ins>OUR WORK </ins> </i></h3>
+      <section >
+        
+        
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="wedding.html"><!-- also add href  -->
+              <img src="imagesi/wedding.jpg" alt="wedding decoration" width="600" height="400">
+            </a>
+            <div class="desc">WEDDING</div>
+          </div>
+        </div>
+        
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="birthday.html">
+              <img src="imagesi/birthday.jpg" alt="birthday decoration" width="600" height="400">
+            </a>
+            <div class="desc">BIRTHDAY</div>
+          </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="event.html">
+              <img src="imagesi/events.jpg" alt="event decoration" width="600" height="400">
+            </a>
+            <div class="desc">EVENTS</div>
+          </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="surprise.html">
+              <img src="imagesi/surprise your wifejpg.jpg" alt="surprise decoration" width="600" height="400">
+            </a>
+            <div class="desc">SURPRISE PLANNER</div>
+          </div>
+        </div>
+        
+        
+       
+        
+
+     
+      <hr>
+        
+        
+        <div style="padding:6px;text-align: center;">
+            
+        </section>
+
+        <div>
+          
+     
+<footer class="footer">
+  <hr>
+  <div>
+  
+  
+   <img class="logo" src="imagesi/company.logo.png" alt="Bhalerao decoration logo" >
+   <div style="color: white;">
+     
+   <h3 style="text-decoration: underline;">Reach us </h3>
+   <p>Gmail- bhaleraodecoration@gmail.com</p>
+         <p>Call - 8149633260 </p>
+   
+<hr>
+   
+     <h3>Connect with us</h3>
+     <ul class="fotter_1">
+      <li class="fotter_2"><a href="https://www.instagram.com/bhaleraodecoration?r=nametag"><img class="logo_media" src="imagesi/Instagram-Icon.png"></a></li>
+      <li class="fotter_2"><a href="https://www.facebook.com/Bhaleraodecoration"><img class="logo_media" src="imagesi/facebook_icon.png"></a></li>
+      <li class="fotter_2"><a href="https://youtube.com/channel/UCEcPx1VO079uWtrE1MLl7Og"><img class="logo_media" src="imagesi/youtube_icon.png"></a></li>
+      <li class="fotter_2"><a href="https://wa.me/message/ZEYUIRHMRRKGP1"><img class="logo_media" src="imagesi/whatsapp-logo-icon-vector-27990484.jpg"></a></li>
+
+    </ul>
+
+    
+  </div>
+
+        <!-- rjcreation -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        
+        <h2 class="rjcreation" > RJ.Creation</h2>
+  </div>
+
+<ul class="button_1">
+    <li class="button_2"> <a  href="tel:+91 8149633260">Call Us</a></li>
+    <li class="button_2"> <a  href="book.html" target="-blank">Message Us</a></li>
+
+    <li class="button_2"><a  href="https://g.page/r/Cf10fjKvY0cmEAg/review" target="-blank">Feedback</a></li>
+  </ul>
+
+  
+</footer>
+      <script>
+        function sidebar_open() {
+          document.getElementById("idsidebar").style.display = "block";
+        }
+        function sidebar_close() {
+          document.getElementById("idsidebar").style.display = "none";
+        }
+
+      </script>
+
+
+
+</body>
+</html>
